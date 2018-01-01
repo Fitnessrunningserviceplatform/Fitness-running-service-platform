@@ -5,14 +5,16 @@
     android:background="@drawable/user_interface">
 
 
+
     <ImageView
         android:id="@+id/colour"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="250dp"
         android:src="@drawable/colour"/>
 
-     <ImageView
+
+    <ImageView
          android:id="@+id/white_1"
          android:scaleType="fitStart"
          android:layout_marginTop="30dp"
@@ -28,6 +30,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:src="@drawable/white"/>
+
+
 
     <TextView
         android:layout_width="match_parent"
@@ -181,20 +185,20 @@
 
         <TableRow>
             <ImageView android:id="@+id/fitruning"
-                        android:layout_marginTop="80dp"
+                        android:layout_marginTop="90dp"
                         android:paddingLeft="20dp"
                         android:src="@drawable/fitrunning"/>
 
             <ImageView android:id="@+id/plan2"
-                        android:layout_marginTop="80dp"
+                        android:layout_marginTop="90dp"
                         android:src="@drawable/plan2"/>
 
             <ImageView android:id="@+id/sportcity"
-                        android:layout_marginTop="80dp"
+                        android:layout_marginTop="90dp"
                         android:src="@drawable/city"/>
 
             <ImageView android:id="@+id/my"
-                        android:layout_marginTop="80dp"
+                        android:layout_marginTop="90dp"
                         android:src="@drawable/myself"/>
         </TableRow>
 

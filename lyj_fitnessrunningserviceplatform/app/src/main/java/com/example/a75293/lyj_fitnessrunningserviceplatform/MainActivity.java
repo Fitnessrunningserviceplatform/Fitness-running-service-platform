@@ -7,14 +7,17 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+import utils.create_userbasetable;
 
 public class MainActivity extends AppCompatActivity {
-
+    private create_userbasetable dbHelper_base;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+
+        dbHelper_base=new create_userbasetable(this,"userbase.db",null,1);//创建数据库预先准备
 
         Button button_logon=(Button)findViewById(R.id.button_logon);
         TextView textView_register=(TextView)findViewById(R.id.text_register);
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,SecondActivity.class);
                 startActivity(intent);
+                dbHelper_base.getWritableDatabase();
             }
         });
     }
