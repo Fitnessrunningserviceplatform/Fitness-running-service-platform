@@ -1,1 +1,0 @@
-# Fitness-running-service-platform
