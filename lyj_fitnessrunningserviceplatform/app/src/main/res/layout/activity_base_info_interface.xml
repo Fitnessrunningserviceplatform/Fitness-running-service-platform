@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <TextView
+        android:id="@+id/tx_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用"
+        android:textSize="35dp"
+        android:textColor="#FF7F24"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tx_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名"
+        android:textSize="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:textColor="#1874CD"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tx_name"
+        android:layout_alignBaseline="@id/tx_name"
+        android:hint="请输入你的姓名"/>
+
+    <TextView
+        android:id="@+id/tx_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年龄"
+        android:textSize="40dp"
+        android:layout_below="@id/tx_name"
+        android:layout_alignEnd="@id/tx_name"
+        android:layout_marginTop="20dp"
+        android:textColor="#1874CD"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的年龄"
+        android:layout_toRightOf="@id/tx_age"
+        android:layout_alignBaseline="@id/tx_age"/>
+
+    <TextView
+        android:id="@+id/tx_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性别"
+        android:textSize="40dp"
+        android:layout_below="@id/tx_age"
+        android:layout_alignEnd="@id/tx_age"
+        android:layout_marginTop="20dp"
+        android:textColor="#1874CD"/>
+
+     <RadioGroup
+         android:id="@+id/sex"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+         <RadioButton
+             android:id="@+id/chose_male"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="男"
+             android:textSize="25dp"
+             android:layout_marginTop="215dp"
+             android:textColor="#1874CD"
+             android:layout_marginLeft="110dp"
+             />
+
+         <RadioButton
+             android:id="@+id/chose_female"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="女"
+             android:textSize="25dp"
+             android:layout_marginTop="-32dp"
+             android:textColor="#1874CD"
+             android:layout_marginLeft="180dp"
+             />
+     </RadioGroup>
+          <TextView
+              android:id="@+id/tx_tall"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="身高"
+              android:textSize="40dp"
+              android:textColor="#1874CD"
+              android:layout_below="@id/tx_sex"
+              android:layout_marginTop="20dp"
+              android:layout_alignEnd="@id/tx_sex"/>
+
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/tx_tall"
+               android:layout_alignBaseline="@id/tx_tall"
+               android:hint="请输入你的身高"/>
+
+            <TextView
+                android:id="@+id/tx_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体重"
+                android:textSize="40dp"
+                android:textColor="#1874CD"
+                android:layout_below="@id/tx_tall"
+                android:layout_alignEnd="@id/tx_tall"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/ed_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tx_weight"
+                android:layout_alignBaseline="@id/tx_weight"
+                android:hint="请输入你的体重"/>
+
+            <ImageView
+                android:id="@+id/im_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rate_record"
+                android:layout_below="@id/tx_weight"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="60dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:text="心率"
+               android:textSize="30dp"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/im_rate"
+               android:layout_below="@id/ed_weight"
+               android:layout_marginTop="20dp"
+               android:textColor="#1874CD"/>
+</RelativeLayout>

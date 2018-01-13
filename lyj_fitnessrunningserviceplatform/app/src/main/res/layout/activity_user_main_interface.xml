@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_interface">
+
+    <ImageView
+        android:id="@+id/im_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/set"
+        android:layout_marginLeft="370dp"/>
+
+
+    <ImageView
+        android:id="@+id/colour"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:src="@drawable/colour"/>
+
+
+    <ImageView
+         android:id="@+id/white_1"
+         android:scaleType="fitStart"
+         android:layout_marginTop="30dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:src="@drawable/white"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/white"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textView_run2"
+        android:layout_marginTop="80dp"
+        android:text="健身跑账号:123456789"
+        android:layout_marginLeft="110dp"
+        android:textSize="15dp"/>
+
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/head"
+                android:layout_gravity="left"
+                android:paddingLeft="20dp"
+                android:paddingTop="40dp"
+                android:src="@drawable/head" />
+
+            <TextView
+                android:id="@+id/textView_run1"
+                android:layout_marginTop="50dp"
+                android:paddingLeft="5dp"
+                android:text="健身跑"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:id="@+id/friend"
+                       android:text="20好友"
+                       android:textSize="20sp"
+                       android:paddingLeft="35sp"
+                       android:paddingTop="30dp"/>
+
+            <TextView android:id="@+id/attention"
+                android:text="20关注"
+                android:textSize="20sp"
+                android:paddingLeft="20sp"
+                android:paddingTop="30dp"/>
+
+            <TextView android:id="@+id/fans"
+                android:text="20粉丝"
+                android:textSize="20sp"
+                android:paddingLeft="20dp"
+                android:paddingTop="30dp"/>
+
+            <TextView android:id="@+id/circle"
+                android:text="20圈子"
+                android:textSize="20sp"
+                android:paddingLeft="20dp"
+                android:paddingTop="30dp"/>
+        </TableRow>
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#080808">
+        </View>
+        <TableRow android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView android:id="@+id/money_bag"
+                       android:paddingTop="10dp"
+                       android:layout_marginLeft="20dp"
+                       android:text="健身跑钱包"
+                       android:textSize="20dp"/>
+        </TableRow>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#080808">
+        </View>
+
+        <TableRow>
+            <ImageView android:id="@+id/money_icon"
+                        android:src="@drawable/money"
+                        android:paddingTop="10dp"/>
+            <ImageView android:id="@+id/city"
+                        android:src="@drawable/busness_city"
+                        android:paddingTop="10dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:id="@+id/tx_money"
+                       android:text="我的钱包"
+                       android:layout_marginLeft="30dp"/>
+
+            <TextView android:id="@+id/tx_city"
+                android:text="运动商城"
+                android:layout_marginLeft="15dp"/>
+        </TableRow>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#CCCCCC">
+        </View>
+
+        <TableRow>
+            <ImageView android:id="@+id/historydata"
+                        android:src="@drawable/runner"
+                        android:paddingTop="10dp"/>
+
+            <ImageView android:id="@+id/invite"
+                android:src="@drawable/invite"
+                android:paddingTop="10dp"/>
+
+            <ImageView android:id="@+id/achievement"
+                        android:src="@drawable/cup"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp" />
+
+            <ImageView android:id="@+id/sports_play"
+                        android:src="@drawable/plan"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="20dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView  android:id="@+id/tx_historydata"
+                        android:text="历史数据"
+                        android:layout_marginLeft="30dp"/>
+
+            <TextView  android:id="@+id/tx_invite"
+                        android:text="邀请好友"
+                        android:layout_marginLeft="15dp"/>
+
+            <TextView  android:id="@+id/tx_achievemet"
+                        android:text="我的成就"
+                        android:layout_marginLeft="30dp"/>
+
+            <TextView  android:id="@+id/tx_sportplay"
+                        android:text="健身计划"
+                        android:layout_marginLeft="30dp"/>
+        </TableRow>
+
+        <TableRow>
+            <ImageView android:id="@+id/fitruning"
+                        android:layout_marginTop="90dp"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/fitrunning"/>
+
+            <ImageView android:id="@+id/plan2"
+                        android:layout_marginTop="90dp"
+                        android:src="@drawable/plan2"/>
+
+            <ImageView android:id="@+id/sportcity"
+                        android:layout_marginTop="90dp"
+                        android:src="@drawable/city"/>
+
+            <ImageView android:id="@+id/my"
+                        android:layout_marginTop="90dp"
+                        android:src="@drawable/myself"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:id="@+id/run"
+                       android:text="健身跑"
+                       android:paddingLeft="40dp"/>
+
+            <TextView android:id="@+id/runscheme"
+                       android:text="运动方案"
+                       android:paddingLeft="20dp"/>
+
+            <TextView android:id="@+id/community"
+                       android:text="运动社区"
+                       android:paddingLeft="20dp"/>
+
+            <TextView android:id="@+id/tx_my"
+                       android:text="我"
+                       android:paddingLeft="40dp"/>
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
